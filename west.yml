@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: industrix
+      url-base: https://github.com/industrix-id
 
   group-filter: [-babblesim, -optional]
 
@@ -167,8 +169,9 @@ manifest:
       groups:
         - hal
     - name: hal_espressif
-      revision: c811e7e58ecb2574a4ae6a1c777015185cdaf199
-      path: modules/hal/espressif
+      remote: industrix
+      repo-path: hal/espressif
+      revision: main
       west-commands: west/west-commands.yml
       groups:
         - hal
