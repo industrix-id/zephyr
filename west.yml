@@ -170,7 +170,7 @@ manifest:
         - hal
     - name: hal_espressif
       remote: industrix
-      repo-path: hal/espressif
+      repo-path: hal_espressif
       revision: origin
       west-commands: west/west-commands.yml
       groups:
