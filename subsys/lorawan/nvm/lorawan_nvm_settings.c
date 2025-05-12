@@ -77,6 +77,10 @@ static void lorawan_nvm_save_settings(uint16_t nvm_notify_flag)
 			}
 		}
 	}
+
+	if (settings_commit() != 0) {
+		LOG_ERR("Could not commit settings");
+	}
 }
 
 void lorawan_nvm_data_mgmt_event(uint16_t flags)
